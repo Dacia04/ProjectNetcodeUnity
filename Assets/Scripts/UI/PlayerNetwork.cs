@@ -8,6 +8,7 @@ public class PlayerNetwork : NetworkBehaviour
 {
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private Transform spawnedObjectPrefab;
+    private Transform spawnedObjectTransform;
 
     private NetworkVariable<MyCustomData> randomNumber = new(new MyCustomData(56,true,""), NetworkVariableReadPermission.Everyone,NetworkVariableWritePermission.Owner);
 
@@ -44,10 +45,16 @@ public class PlayerNetwork : NetworkBehaviour
 
         if (Input.GetKeyDown(KeyCode.T))
         {
-            Instantiate(spawnedObjectPrefab);
+            spawnedObjectTransform = Instantiate(spawnedObjectPrefab);
+            spawnedObjectTransform.GetComponent<NetworkObject>().Spawn(true); // Only server can spawn object
             //TestServerRpc();
             //TestClientRpc(new ClientRpcParams { Send = new ClientRpcSendParams {TargetClientIds = new List<ulong>{1}}}); // only client have sendID execute fuction
             //randomNumber.Value = new MyCustomData(10, false,"All your base are belong to us");
+        }
+        if(Input.GetKeyDown(KeyCode.Y))
+        {
+            spawnedObjectTransform.GetComponent<NetworkObject>().Despawn(true); 
+            //Destroy(spawnedObjectTransform.gameObject); // only server can destroy object
         }
 
         Vector3 moveDir = new Vector3(0, 0, 0);

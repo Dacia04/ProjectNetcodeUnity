@@ -20,8 +20,8 @@ Library: D:\Document\Unity\ProjectNetcodeUnity\Temp\BurstOutput\Data\Plugins\x86
 --assembly-defines=Unity.Services.Core.Scheduler;
 --assembly-defines=Unity.Services.Core.Environments;
 --assembly-defines=Unity.Services.Relay;
---assembly-defines=Unity.Multiplayer.Tools.NetStats;
 --assembly-defines=Unity.Services.Core.Configuration;
+--assembly-defines=Unity.Multiplayer.Tools.NetStats;
 --assembly-defines=Unity.Collections;
 --assembly-defines=Unity.Netcode.Runtime;
 --assembly-defines=Unity.Multiplayer.Samples.Utilities.RNSM;
@@ -191,8 +191,8 @@ Library: D:\Document\Unity\ProjectNetcodeUnity\Temp\BurstOutput\Data\Plugins\x86
 --assembly-defines=Unity.Services.Core.Scheduler;
 --assembly-defines=Unity.Services.Core.Environments;
 --assembly-defines=Unity.Services.Relay;
---assembly-defines=Unity.Multiplayer.Tools.NetStats;
 --assembly-defines=Unity.Services.Core.Configuration;
+--assembly-defines=Unity.Multiplayer.Tools.NetStats;
 --assembly-defines=Unity.Collections;
 --assembly-defines=Unity.Netcode.Runtime;
 --assembly-defines=Unity.Multiplayer.Samples.Utilities.RNSM;

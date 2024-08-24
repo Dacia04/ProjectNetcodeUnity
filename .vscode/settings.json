@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ProjectNetcodeUnity.sln"
+    "dotnet.defaultSolution": "ProjectNetcodeUnity.sln",
+    "dotnet.preferCSharpExtension": true
 }

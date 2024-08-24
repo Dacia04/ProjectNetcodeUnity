@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  spawnedObjectPrefab: {fileID: 4395227429510882100, guid: c6314b81044411a4b99c4e0c66998873, type: 3}
 --- !u!114 &-6785394979461559428
 MonoBehaviour:
   m_ObjectHideFlags: 0
